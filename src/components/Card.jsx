@@ -1,8 +1,8 @@
 export default function Card() {
   return (
-    <div className="group bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:scale-105 cursor-pointer max-w-64">
+    <div className="group bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:scale-105 cursor-pointer">
       {/* Poster/Banner */}
-      <div className="relative overflow-hidden aspect-[2/3]">
+      <div className="relative overflow-hidden aspect-[3/4]">
         <img
           src="https://image.tmdb.org/t/p/w500/example-movie-poster.jpg"
           alt="Movie Title"
