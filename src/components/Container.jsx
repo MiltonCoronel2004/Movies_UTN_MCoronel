@@ -1,3 +1,10 @@
-export default function Container({ children }) {
-  return <div className="max-w-6xl mx-auto px-4 grid grid-cols-4 gap-6">{children}</div>;
+export default function Container({ children, loading }) {
+  if (loading)
+    return (
+      <div className="min-h-screen flex justify-center items-center">
+        <span className="loading loading-ring loading-xl"></span>
+      </div>
+    );
+
+  return <div className="max-w-7xl mx-auto grid lg:grid-cols-5 gap-6">{children}</div>;
 }
